@@ -15,6 +15,7 @@ NEWSPIDER_MODULE = "ndlcrawler.spiders"
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = "ndlcrawler (+http://www.yourdomain.com)"
+USER_AGENT = "ndlpdbot/0.0 (+https://github.com/Gowee/ndlpd)"
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
