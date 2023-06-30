@@ -8,6 +8,8 @@ TARGET_COLLECTIONS = {f"A0000{n}" for n in range(3, 8 + 1)}
 
 RELATED_URL = "https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/"
 
+raise NotImplementedError("Never usable. It is not throttled properly, crashing the remote API and getting IP banned.")
+
 class ReleatedSpider(scrapy.Spider):
     name = "related"
     allowed_domains = ["dl.ndl.go.jp"]
@@ -21,7 +23,7 @@ class ReleatedSpider(scrapy.Spider):
         ids = sorted(map(int, ids.splitlines()))
         self.logger.info(f"Known ids: {len(ids)}")
         self.ids = set(ids)
-        
+
 
     def start_requests(self):
         for i in self.ids:
