@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "crawler"
+version = "0.1.0"
+description = ""
+authors = ["Hung-I Wang <whygowe@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+Scrapy = "^2.9.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
