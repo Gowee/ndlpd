@@ -1,0 +1,90 @@
+2023-06-30 15:01:52 [scrapy.utils.log] INFO: Scrapy 2.9.0 started (bot: ndlcrawler)
+2023-06-30 15:01:52 [scrapy.utils.log] INFO: Versions: lxml 4.9.2.0, libxml2 2.9.14, cssselect 1.2.0, parsel 1.8.1, w3lib 2.1.1, Twisted 22.10.0, Python 3.10.10 (main, Mar  5 2023, 22:26:53) [GCC 12.2.1 20230201], pyOpenSSL 23.2.0 (OpenSSL 3.1.1 30 May 2023), cryptography 41.0.1, Platform Linux-6.2.12-arch1-1-x86_64-with-glibc2.37
+2023-06-30 15:01:52 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'ndlcrawler',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'logs/booklist.A00005.year.1800-1830.DESC.log',
+ 'NEWSPIDER_MODULE': 'ndlcrawler.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['ndlcrawler.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+2023-06-30 15:01:52 [asyncio] DEBUG: Using selector: EpollSelector
+2023-06-30 15:01:52 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2023-06-30 15:01:52 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.unix_events._UnixSelectorEventLoop
+2023-06-30 15:01:52 [scrapy.extensions.telnet] INFO: Telnet Password: b3b81669ecbfd25f
+2023-06-30 15:01:52 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2023-06-30 15:01:52 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2023-06-30 15:01:52 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2023-06-30 15:01:52 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2023-06-30 15:01:52 [scrapy.core.engine] INFO: Spider opened
+2023-06-30 15:01:53 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2023-06-30 15:01:53 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6024
+2023-06-30 15:01:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dl.ndl.go.jp/robots.txt> (referer: None)
+2023-06-30 15:01:53 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://dl.ndl.go.jp/api/item/search> (referer: None)
+2023-06-30 15:01:53 [booklist] INFO: Fetched page 1
+2023-06-30 15:01:53 [booklist] INFO: VALID_ID: 2563871
+2023-06-30 15:01:53 [booklist] INFO: VALID_ID: 2563872
+2023-06-30 15:01:53 [booklist] INFO: VALID_ID: 2563873
+2023-06-30 15:01:53 [booklist] INFO: VALID_ID: 2563874
+2023-06-30 15:01:53 [booklist] INFO: VALID_ID: 2563875
+2023-06-30 15:01:53 [booklist] INFO: VALID_ID: 2563876
+2023-06-30 15:01:53 [booklist] INFO: VALID_ID: 2563877
+2023-06-30 15:01:53 [booklist] INFO: VALID_ID: 2563878
+2023-06-30 15:01:53 [booklist] INFO: VALID_ID: 2563879
+2023-06-30 15:01:53 [booklist] INFO: VALID_ID: 2563880
+2023-06-30 15:01:53 [booklist] INFO: VALID_ID: 2563881
+2023-06-30 15:01:54 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://dl.ndl.go.jp/api/item/search> (referer: https://dl.ndl.go.jp/api/item/search)
+2023-06-30 15:01:54 [booklist] INFO: Fetched page 2
+2023-06-30 15:01:54 [booklist] INFO: No more books on 2
+2023-06-30 15:01:54 [scrapy.core.engine] INFO: Closing spider (finished)
+2023-06-30 15:01:54 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 3029,
+ 'downloader/request_count': 3,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/request_method_count/POST': 2,
+ 'downloader/response_bytes': 11119,
+ 'downloader/response_count': 3,
+ 'downloader/response_status_count/200': 3,
+ 'elapsed_time_seconds': 1.320354,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2023, 6, 30, 7, 1, 54, 453372),
+ 'httpcompression/response_bytes': 108000,
+ 'httpcompression/response_count': 2,
+ 'log_count/DEBUG': 6,
+ 'log_count/INFO': 24,
+ 'memusage/max': 63901696,
+ 'memusage/startup': 63901696,
+ 'request_depth_max': 1,
+ 'response_received_count': 3,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'start_time': datetime.datetime(2023, 6, 30, 7, 1, 53, 133018)}
+2023-06-30 15:01:54 [scrapy.core.engine] INFO: Spider closed (finished)

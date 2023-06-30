@@ -1,0 +1,270 @@
+2023-06-30 17:26:44 [scrapy.utils.log] INFO: Scrapy 2.9.0 started (bot: ndlcrawler)
+2023-06-30 17:26:44 [scrapy.utils.log] INFO: Versions: lxml 4.9.2.0, libxml2 2.9.14, cssselect 1.2.0, parsel 1.8.1, w3lib 2.1.1, Twisted 22.10.0, Python 3.10.10 (main, Mar  5 2023, 22:26:53) [GCC 12.2.1 20230201], pyOpenSSL 23.2.0 (OpenSSL 3.1.1 30 May 2023), cryptography 41.0.1, Platform Linux-6.2.12-arch1-1-x86_64-with-glibc2.37
+2023-06-30 17:26:44 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'ndlcrawler',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'logs/booklist.title.池.DESC.log',
+ 'NEWSPIDER_MODULE': 'ndlcrawler.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['ndlcrawler.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+2023-06-30 17:26:44 [asyncio] DEBUG: Using selector: EpollSelector
+2023-06-30 17:26:44 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2023-06-30 17:26:44 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.unix_events._UnixSelectorEventLoop
+2023-06-30 17:26:44 [scrapy.extensions.telnet] INFO: Telnet Password: c41fd41399e27a4a
+2023-06-30 17:26:44 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2023-06-30 17:26:45 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2023-06-30 17:26:45 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2023-06-30 17:26:45 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2023-06-30 17:26:45 [scrapy.core.engine] INFO: Spider opened
+2023-06-30 17:26:45 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2023-06-30 17:26:45 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2023-06-30 17:26:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dl.ndl.go.jp/robots.txt> (referer: None)
+2023-06-30 17:26:46 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://dl.ndl.go.jp/api/item/search> (referer: None)
+2023-06-30 17:26:46 [booklist] INFO: Fetched page 1
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 2533722
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 9367568
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 2570808
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 2580796
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 2570810
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 1305513
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 2570801
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 2542750
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 9367547
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 1307348
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 2570803
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 2570805
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 1303518
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 2570798
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 2570804
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 1308757
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 2570353
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 2580800
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 10317563
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 10300991
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 2580801
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 2580795
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 2609534
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 1303522
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 2580802
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 9369159
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 2608098
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 2580799
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 2580798
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 1308511
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 2554247
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 9367530
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 2570354
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 9367514
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 2580797
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 9367577
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 1303630
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 2606428
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 2533972
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 1309527
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 2554246
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 9893833
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 1305412
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 1308488
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 1307975
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 9369174
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 1313274
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 1307056
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 1309097
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 1306866
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 2540773
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 1308390
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 1311797
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 1303857
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 1308267
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 1306047
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 1309718
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 1304816
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 1305038
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 1309856
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 1303227
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 1305978
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 2539438
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 8369274
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 2537129
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 1312259
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 1305439
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 1308885
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 1305432
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 1312346
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 1305733
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 1309877
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 2542230
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 1305726
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 1303316
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 1312323
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 1310902
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 1305838
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 1303291
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 1312247
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 1303293
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 1305353
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 1307360
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 1312321
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 1303215
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 2542390
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 1309664
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 1306526
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 1306440
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 1303861
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 1304480
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 1303561
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 1312833
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 2576264
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 2542308
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 2542167
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 1307048
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 1309770
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 10301041
+2023-06-30 17:26:46 [booklist] INFO: VALID_ID: 1302539
+2023-06-30 17:26:47 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://dl.ndl.go.jp/api/item/search> (referer: https://dl.ndl.go.jp/api/item/search)
+2023-06-30 17:26:47 [booklist] INFO: Fetched page 2
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 2585226
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 2593527
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 11891834
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 2539180
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 2593510
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 10301762
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 2585203
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 2581871
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 2593570
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 2593286
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 2581872
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 2585405
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 11446499
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 11038496
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 1306206
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 2551754
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 1287601
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 1287599
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 1287602
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 10301744
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 1287591
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 1287611
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 1287592
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 1287594
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 10301770
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 1287610
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 1287608
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 1287585
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 1287603
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 1287586
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 1287607
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 1287587
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 1287593
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 1287600
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 1288333
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 10300957
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 1287609
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 2609596
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 10301767
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 10301527
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 2585218
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 2546174
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 2541716
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 2611107
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 10300956
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 2585292
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 10301138
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 10301752
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 10301738
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 2546171
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 10301749
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 2587516
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 2587514
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 2606806
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 2587515
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 1305542
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 2610518
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 2587334
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 2576249
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 2576257
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 2576255
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 2576253
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 2576248
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 2576258
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 2576263
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 2576246
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 2576252
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 2576260
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 2576262
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 2576256
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 2587335
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 2576250
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 2576251
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 2576247
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 2576259
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 2576261
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 2576254
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 2587337
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 2587338
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 2587336
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 2606743
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 2610012
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 2609516
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 9369966
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 9369960
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 9369953
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 2585159
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 11446659
+2023-06-30 17:26:48 [booklist] INFO: VALID_ID: 2611035
+2023-06-30 17:26:48 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://dl.ndl.go.jp/api/item/search> (referer: https://dl.ndl.go.jp/api/item/search)
+2023-06-30 17:26:48 [booklist] INFO: Fetched page 3
+2023-06-30 17:26:48 [booklist] INFO: No more books on 3
+2023-06-30 17:26:48 [scrapy.core.engine] INFO: Closing spider (finished)
+2023-06-30 17:26:48 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 4228,
+ 'downloader/request_count': 4,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/request_method_count/POST': 3,
+ 'downloader/response_bytes': 641322,
+ 'downloader/response_count': 4,
+ 'downloader/response_status_count/200': 4,
+ 'elapsed_time_seconds': 3.199423,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2023, 6, 30, 9, 26, 48, 526343),
+ 'httpcompression/response_bytes': 7160131,
+ 'httpcompression/response_count': 3,
+ 'log_count/DEBUG': 7,
+ 'log_count/INFO': 203,
+ 'memusage/max': 63889408,
+ 'memusage/startup': 63889408,
+ 'request_depth_max': 2,
+ 'response_received_count': 4,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 3,
+ 'scheduler/dequeued/memory': 3,
+ 'scheduler/enqueued': 3,
+ 'scheduler/enqueued/memory': 3,
+ 'start_time': datetime.datetime(2023, 6, 30, 9, 26, 45, 326920)}
+2023-06-30 17:26:48 [scrapy.core.engine] INFO: Spider closed (finished)

@@ -1,0 +1,140 @@
+2023-06-30 19:05:38 [scrapy.utils.log] INFO: Scrapy 2.9.0 started (bot: ndlcrawler)
+2023-06-30 19:05:38 [scrapy.utils.log] INFO: Versions: lxml 4.9.2.0, libxml2 2.9.14, cssselect 1.2.0, parsel 1.8.1, w3lib 2.1.1, Twisted 22.10.0, Python 3.10.10 (main, Mar  5 2023, 22:26:53) [GCC 12.2.1 20230201], pyOpenSSL 23.2.0 (OpenSSL 3.1.1 30 May 2023), cryptography 41.0.1, Platform Linux-6.2.12-arch1-1-x86_64-with-glibc2.37
+2023-06-30 19:05:38 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'ndlcrawler',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'logs/booklist.title.望.DESC.log',
+ 'NEWSPIDER_MODULE': 'ndlcrawler.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['ndlcrawler.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+2023-06-30 19:05:38 [asyncio] DEBUG: Using selector: EpollSelector
+2023-06-30 19:05:38 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2023-06-30 19:05:38 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.unix_events._UnixSelectorEventLoop
+2023-06-30 19:05:38 [scrapy.extensions.telnet] INFO: Telnet Password: 5b20132fbe741ef2
+2023-06-30 19:05:38 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2023-06-30 19:05:38 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2023-06-30 19:05:38 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2023-06-30 19:05:38 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2023-06-30 19:05:38 [scrapy.core.engine] INFO: Spider opened
+2023-06-30 19:05:38 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2023-06-30 19:05:38 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2023-06-30 19:05:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dl.ndl.go.jp/robots.txt> (referer: None)
+2023-06-30 19:05:40 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://dl.ndl.go.jp/api/item/search> (referer: None)
+2023-06-30 19:05:40 [booklist] INFO: Fetched page 1
+2023-06-30 19:05:40 [booklist] INFO: VALID_ID: 2585636
+2023-06-30 19:05:40 [booklist] INFO: VALID_ID: 2585594
+2023-06-30 19:05:40 [booklist] INFO: VALID_ID: 2585662
+2023-06-30 19:05:40 [booklist] INFO: VALID_ID: 2585684
+2023-06-30 19:05:40 [booklist] INFO: VALID_ID: 2609616
+2023-06-30 19:05:40 [booklist] INFO: VALID_ID: 2585460
+2023-06-30 19:05:40 [booklist] INFO: VALID_ID: 2585467
+2023-06-30 19:05:40 [booklist] INFO: VALID_ID: 2585547
+2023-06-30 19:05:40 [booklist] INFO: VALID_ID: 2585502
+2023-06-30 19:05:40 [booklist] INFO: VALID_ID: 2585271
+2023-06-30 19:05:40 [booklist] INFO: VALID_ID: 2585630
+2023-06-30 19:05:40 [booklist] INFO: VALID_ID: 1307920
+2023-06-30 19:05:40 [booklist] INFO: VALID_ID: 2585666
+2023-06-30 19:05:40 [booklist] INFO: VALID_ID: 2585567
+2023-06-30 19:05:40 [booklist] INFO: VALID_ID: 2585461
+2023-06-30 19:05:40 [booklist] INFO: VALID_ID: 1308251
+2023-06-30 19:05:40 [booklist] INFO: VALID_ID: 2585639
+2023-06-30 19:05:40 [booklist] INFO: VALID_ID: 2585635
+2023-06-30 19:05:40 [booklist] INFO: VALID_ID: 2585592
+2023-06-30 19:05:40 [booklist] INFO: VALID_ID: 2585660
+2023-06-30 19:05:40 [booklist] INFO: VALID_ID: 2585525
+2023-06-30 19:05:40 [booklist] INFO: VALID_ID: 2585627
+2023-06-30 19:05:40 [booklist] INFO: VALID_ID: 2585672
+2023-06-30 19:05:40 [booklist] INFO: VALID_ID: 2585430
+2023-06-30 19:05:40 [booklist] INFO: VALID_ID: 2585621
+2023-06-30 19:05:40 [booklist] INFO: VALID_ID: 2585506
+2023-06-30 19:05:40 [booklist] INFO: VALID_ID: 2551755
+2023-06-30 19:05:40 [booklist] INFO: VALID_ID: 1287575
+2023-06-30 19:05:40 [booklist] INFO: VALID_ID: 1287568
+2023-06-30 19:05:40 [booklist] INFO: VALID_ID: 1287546
+2023-06-30 19:05:40 [booklist] INFO: VALID_ID: 1287583
+2023-06-30 19:05:40 [booklist] INFO: VALID_ID: 1287578
+2023-06-30 19:05:40 [booklist] INFO: VALID_ID: 1287556
+2023-06-30 19:05:40 [booklist] INFO: VALID_ID: 2553309
+2023-06-30 19:05:40 [booklist] INFO: VALID_ID: 2585524
+2023-06-30 19:05:40 [booklist] INFO: VALID_ID: 1287581
+2023-06-30 19:05:40 [booklist] INFO: VALID_ID: 1287559
+2023-06-30 19:05:40 [booklist] INFO: VALID_ID: 1312553
+2023-06-30 19:05:40 [booklist] INFO: VALID_ID: 1287547
+2023-06-30 19:05:40 [booklist] INFO: VALID_ID: 1287571
+2023-06-30 19:05:40 [booklist] INFO: VALID_ID: 1288332
+2023-06-30 19:05:40 [booklist] INFO: VALID_ID: 1287552
+2023-06-30 19:05:40 [booklist] INFO: VALID_ID: 1287572
+2023-06-30 19:05:40 [booklist] INFO: VALID_ID: 1287573
+2023-06-30 19:05:40 [booklist] INFO: VALID_ID: 1287584
+2023-06-30 19:05:40 [booklist] INFO: VALID_ID: 1287567
+2023-06-30 19:05:40 [booklist] INFO: VALID_ID: 1287580
+2023-06-30 19:05:40 [booklist] INFO: VALID_ID: 2610456
+2023-06-30 19:05:40 [booklist] INFO: VALID_ID: 9892581
+2023-06-30 19:05:40 [booklist] INFO: VALID_ID: 2533430
+2023-06-30 19:05:40 [booklist] INFO: VALID_ID: 2532472
+2023-06-30 19:05:40 [booklist] INFO: VALID_ID: 9369966
+2023-06-30 19:05:40 [booklist] INFO: VALID_ID: 2543380
+2023-06-30 19:05:40 [booklist] INFO: VALID_ID: 2609783
+2023-06-30 19:05:40 [booklist] INFO: VALID_ID: 9369964
+2023-06-30 19:05:40 [booklist] INFO: VALID_ID: 2610518
+2023-06-30 19:05:40 [booklist] INFO: VALID_ID: 2605214
+2023-06-30 19:05:40 [booklist] INFO: VALID_ID: 2610444
+2023-06-30 19:05:40 [booklist] INFO: VALID_ID: 2606743
+2023-06-30 19:05:40 [booklist] INFO: VALID_ID: 9369953
+2023-06-30 19:05:40 [booklist] INFO: VALID_ID: 2610012
+2023-06-30 19:05:40 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://dl.ndl.go.jp/api/item/search> (referer: https://dl.ndl.go.jp/api/item/search)
+2023-06-30 19:05:40 [booklist] INFO: Fetched page 2
+2023-06-30 19:05:40 [booklist] INFO: No more books on 2
+2023-06-30 19:05:40 [scrapy.core.engine] INFO: Closing spider (finished)
+2023-06-30 19:05:40 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 2877,
+ 'downloader/request_count': 3,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/request_method_count/POST': 2,
+ 'downloader/response_bytes': 117218,
+ 'downloader/response_count': 3,
+ 'downloader/response_status_count/200': 3,
+ 'elapsed_time_seconds': 2.004846,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2023, 6, 30, 11, 5, 40, 956416),
+ 'httpcompression/response_bytes': 968845,
+ 'httpcompression/response_count': 2,
+ 'log_count/DEBUG': 6,
+ 'log_count/INFO': 74,
+ 'memusage/max': 63856640,
+ 'memusage/startup': 63856640,
+ 'request_depth_max': 1,
+ 'response_received_count': 3,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'start_time': datetime.datetime(2023, 6, 30, 11, 5, 38, 951570)}
+2023-06-30 19:05:40 [scrapy.core.engine] INFO: Spider closed (finished)
