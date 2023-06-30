@@ -1,0 +1,726 @@
+2023-06-30 22:10:52 [scrapy.utils.log] INFO: Scrapy 2.9.0 started (bot: ndlcrawler)
+2023-06-30 22:10:52 [scrapy.utils.log] INFO: Versions: lxml 4.9.2.0, libxml2 2.9.14, cssselect 1.2.0, parsel 1.8.1, w3lib 2.1.1, Twisted 22.10.0, Python 3.11.3 (main, Apr  5 2023, 15:52:25) [GCC 12.2.1 20230201], pyOpenSSL 23.2.0 (OpenSSL 3.1.1 30 May 2023), cryptography 41.0.1, Platform Linux-6.3.6-zen1-1-zen-x86_64-with-glibc2.37
+2023-06-30 22:10:52 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'ndlcrawler',
+ 'EDITOR': 'vim',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'related.log',
+ 'NEWSPIDER_MODULE': 'ndlcrawler.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['ndlcrawler.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor',
+ 'USER_AGENT': 'ndlpdbot/0.0 (+https://github.com/Gowee/ndlpd)'}
+2023-06-30 22:10:52 [asyncio] DEBUG: Using selector: EpollSelector
+2023-06-30 22:10:52 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2023-06-30 22:10:52 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.unix_events._UnixSelectorEventLoop
+2023-06-30 22:10:52 [scrapy.extensions.telnet] INFO: Telnet Password: 036d0ddb398f8050
+2023-06-30 22:10:52 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2023-06-30 22:10:52 [related] INFO: Known ids: 82942
+2023-06-30 22:10:52 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2023-06-30 22:10:52 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2023-06-30 22:10:52 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2023-06-30 22:10:52 [scrapy.core.engine] INFO: Spider opened
+2023-06-30 22:10:52 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2023-06-30 22:10:52 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2023-06-30 22:11:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dl.ndl.go.jp/robots.txt> (referer: None)
+2023-06-30 22:11:01 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310720> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:01 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310728> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:01 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310721> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:01 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310724> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:01 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310722> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:01 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310727> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:01 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310723> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:01 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310725> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:01 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310726> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:01 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310729> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:02 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310731> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:02 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310732> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:02 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310730> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:02 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310733> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:02 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310734> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:02 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310735> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:02 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310728> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:02 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310720> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:02 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310722> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:02 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310723> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:02 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310724> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:02 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310721> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:02 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310727> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:02 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310725> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:02 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310726> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:02 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310729> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:02 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310731> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:02 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310732> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:02 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310730> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:02 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310733> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:02 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310734> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:02 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310728> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:02 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310728> (referer: None)
+2023-06-30 22:11:02 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310735> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:02 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310720> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:02 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310720> (referer: None)
+2023-06-30 22:11:02 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310724> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:02 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310724> (referer: None)
+2023-06-30 22:11:02 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310722> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:02 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310722> (referer: None)
+2023-06-30 22:11:02 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310723> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:02 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310723> (referer: None)
+2023-06-30 22:11:02 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310728>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:02 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310720>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:02 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310721> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:02 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310721> (referer: None)
+2023-06-30 22:11:02 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310727> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:02 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310727> (referer: None)
+2023-06-30 22:11:02 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310724>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:02 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310722>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:02 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310723>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:02 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310725> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:02 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310725> (referer: None)
+2023-06-30 22:11:02 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310729> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:02 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310729> (referer: None)
+2023-06-30 22:11:02 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310726> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:02 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310726> (referer: None)
+2023-06-30 22:11:02 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310721>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:02 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310727>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:02 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310732> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:02 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310732> (referer: None)
+2023-06-30 22:11:02 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310731> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:02 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310731> (referer: None)
+2023-06-30 22:11:02 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310725>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:02 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310729>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:02 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310726>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:03 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310732>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:03 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310733> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:03 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310733> (referer: None)
+2023-06-30 22:11:03 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310730> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:03 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310730> (referer: None)
+2023-06-30 22:11:03 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310731>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:03 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310736> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:03 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310733>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:03 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310730>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:03 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310734> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:03 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310734> (referer: None)
+2023-06-30 22:11:03 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310735> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:03 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310735> (referer: None)
+2023-06-30 22:11:03 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310737> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:03 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310739> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:03 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310738> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:03 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310734>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:03 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310735>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:03 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310741> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:03 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310740> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:03 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310742> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:03 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/2553058> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:03 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310746> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:03 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310758> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:03 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310757> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:03 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310759> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:03 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310760> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:03 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310761> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:03 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310736> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:03 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310762> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:03 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310738> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:03 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310737> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:03 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310763> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:03 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310739> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:03 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310741> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:03 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310740> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:03 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310742> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:04 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310759> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:04 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310758> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:04 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310757> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:04 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310761> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:04 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/2553058> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:04 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310746> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:04 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310760> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:04 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310736> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:04 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310736> (referer: None)
+2023-06-30 22:11:04 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310736>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:04 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310762> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:04 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310739> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:04 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310739> (referer: None)
+2023-06-30 22:11:04 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310763> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:04 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310739>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:04 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310737> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:04 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310737> (referer: None)
+2023-06-30 22:11:04 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310741> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:04 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310741> (referer: None)
+2023-06-30 22:11:04 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310738> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:04 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310738> (referer: None)
+2023-06-30 22:11:04 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310740> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:04 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310740> (referer: None)
+2023-06-30 22:11:04 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310742> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:04 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310742> (referer: None)
+2023-06-30 22:11:04 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310759> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:04 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310759> (referer: None)
+2023-06-30 22:11:04 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310737>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:04 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310741>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:04 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310738>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:04 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310740>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:04 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310742>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:04 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310758> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:04 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310758> (referer: None)
+2023-06-30 22:11:04 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310760> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:04 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310760> (referer: None)
+2023-06-30 22:11:04 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310759>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:04 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/2553058> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:04 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/2553058> (referer: None)
+2023-06-30 22:11:04 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310746> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:04 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310746> (referer: None)
+2023-06-30 22:11:04 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310764> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:04 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310757> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:04 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310757> (referer: None)
+2023-06-30 22:11:04 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310758>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:04 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310760>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:05 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310761> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:05 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310761> (referer: None)
+2023-06-30 22:11:05 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310762> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:05 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310762> (referer: None)
+2023-06-30 22:11:05 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/2553058>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:05 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310746>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:05 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310757>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:05 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310765> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:05 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310763> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:05 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310763> (referer: None)
+2023-06-30 22:11:05 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310767> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:05 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310766> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:05 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310761>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:05 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310762>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:05 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310763>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:05 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310769> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:05 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310768> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:05 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310770> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:05 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310771> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:05 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310772> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:05 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310773> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:05 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310774> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:05 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310775> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:05 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310776> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:05 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310764> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:05 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310778> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:05 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310765> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:05 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310779> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:05 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310777> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:05 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310767> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:05 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310766> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:05 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310768> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:05 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310769> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:05 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310770> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:05 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310772> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:05 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310773> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:05 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310771> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:05 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310774> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:05 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310775> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:06 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310776> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:06 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310778> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:06 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310764> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:06 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310764> (referer: None)
+2023-06-30 22:11:06 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310777> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:06 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310779> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:06 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310767> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:06 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310767> (referer: None)
+2023-06-30 22:11:06 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310765> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:06 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310765> (referer: None)
+2023-06-30 22:11:06 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310766> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:06 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310766> (referer: None)
+2023-06-30 22:11:06 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310764>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:06 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310767>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:06 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310765>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:06 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310766>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:06 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310769> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:06 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310769> (referer: None)
+2023-06-30 22:11:06 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310768> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:06 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310768> (referer: None)
+2023-06-30 22:11:06 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310770> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:06 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310770> (referer: None)
+2023-06-30 22:11:06 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310771> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:06 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310771> (referer: None)
+2023-06-30 22:11:06 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310769>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:06 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310773> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:06 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310773> (referer: None)
+2023-06-30 22:11:06 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310774> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:06 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310774> (referer: None)
+2023-06-30 22:11:06 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310768>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:06 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310775> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:06 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310775> (referer: None)
+2023-06-30 22:11:06 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310770>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:06 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310771>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:06 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310773>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:06 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310774>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:06 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310775>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:06 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310772> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:06 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310772> (referer: None)
+2023-06-30 22:11:06 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310778> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:06 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310778> (referer: None)
+2023-06-30 22:11:06 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310776> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:06 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310776> (referer: None)
+2023-06-30 22:11:06 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310772>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:07 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310778>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:07 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310776>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:07 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310780> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:07 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310779> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:07 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310779> (referer: None)
+2023-06-30 22:11:07 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310777> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:07 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310777> (referer: None)
+2023-06-30 22:11:07 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310781> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:07 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310782> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:07 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310783> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:07 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310784> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:07 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310785> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:07 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310779>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:07 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310777>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:07 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310789> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:07 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310786> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:07 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310788> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:07 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310787> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:07 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310790> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:07 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/2553067> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:07 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310793> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:07 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310792> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:07 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310780> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:07 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310794> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:07 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310782> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:07 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310781> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:07 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310783> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:07 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310795> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:07 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310784> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:08 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310785> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:08 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310789> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:08 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310790> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:08 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310786> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:08 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310788> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:08 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310787> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:08 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310780> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:08 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310780> (referer: None)
+2023-06-30 22:11:08 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310792> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:08 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310793> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:08 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/2553067> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:08 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310782> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:08 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310782> (referer: None)
+2023-06-30 22:11:08 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310781> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:08 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310781> (referer: None)
+2023-06-30 22:11:08 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310780>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:08 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310782>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:08 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310781>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:08 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310794> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:08 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310783> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:08 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310783> (referer: None)
+2023-06-30 22:11:08 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310795> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:08 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310784> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:08 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310784> (referer: None)
+2023-06-30 22:11:08 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310790> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:08 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310790> (referer: None)
+2023-06-30 22:11:08 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310789> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:08 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310789> (referer: None)
+2023-06-30 22:11:08 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310785> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:08 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310785> (referer: None)
+2023-06-30 22:11:08 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310787> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:08 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310787> (referer: None)
+2023-06-30 22:11:08 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310783>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:08 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310784>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:08 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310790>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:08 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310789>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:08 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310785>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:08 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310788> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:08 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310788> (referer: None)
+2023-06-30 22:11:08 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310787>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:08 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310786> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:08 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310786> (referer: None)
+2023-06-30 22:11:08 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310792> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:08 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310792> (referer: None)
+2023-06-30 22:11:08 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310788>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:08 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/2553067> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:08 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/2553067> (referer: None)
+2023-06-30 22:11:08 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310786>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:08 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310796> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:08 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310792>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:08 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310797> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:08 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310793> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:08 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310793> (referer: None)
+2023-06-30 22:11:08 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310798> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:08 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/2553067>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:08 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310794> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:08 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310794> (referer: None)
+2023-06-30 22:11:08 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310795> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:08 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310795> (referer: None)
+2023-06-30 22:11:09 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310793>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:09 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310794>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:09 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310799> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:09 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310795>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:09 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310800> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:09 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310802> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:09 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310801> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:09 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310803> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:09 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310804> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:09 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310805> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:09 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310806> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:09 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310807> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:09 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310808> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:09 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310809> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:09 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310798> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:09 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310796> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:09 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310797> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:09 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310810> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:09 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310811> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:09 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310799> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:09 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310800> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:09 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310806> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:09 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310802> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:09 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310805> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:09 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310804> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:09 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310803> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:09 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310801> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:09 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310807> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:09 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310809> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:09 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310808> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:09 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310798> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:09 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310798> (referer: None)
+2023-06-30 22:11:09 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310796> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:09 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310796> (referer: None)
+2023-06-30 22:11:09 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310798>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:09 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310797> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:09 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310797> (referer: None)
+2023-06-30 22:11:09 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310796>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:10 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310810> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:10 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310800> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:10 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310800> (referer: None)
+2023-06-30 22:11:10 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310811> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:10 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310797>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:10 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310799> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:10 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310799> (referer: None)
+2023-06-30 22:11:10 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310802> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:10 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310802> (referer: None)
+2023-06-30 22:11:10 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310806> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:10 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310806> (referer: None)
+2023-06-30 22:11:10 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310805> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:10 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310805> (referer: None)
+2023-06-30 22:11:10 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310800>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:10 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310799>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:10 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310802>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:10 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310806>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:10 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310805>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:10 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310804> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:10 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310804> (referer: None)
+2023-06-30 22:11:10 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310809> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:10 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310809> (referer: None)
+2023-06-30 22:11:10 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310801> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:10 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310801> (referer: None)
+2023-06-30 22:11:10 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310803> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:10 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310803> (referer: None)
+2023-06-30 22:11:10 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310808> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:10 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310808> (referer: None)
+2023-06-30 22:11:10 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310807> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:10 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310807> (referer: None)
+2023-06-30 22:11:10 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310813> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:10 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310812> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:10 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310804>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:10 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310809>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:10 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310801>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:10 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310803>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:10 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310808>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:10 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310807>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:10 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310814> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:10 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310811> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:10 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310811> (referer: None)
+2023-06-30 22:11:10 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310816> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:10 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310815> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:10 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310810> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:10 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310810> (referer: None)
+2023-06-30 22:11:10 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310817> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:10 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310819> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:10 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310818> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:10 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310811>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:10 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310810>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:10 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310820> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:10 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310821> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:10 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310822> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:10 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310823> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:10 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310825> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:11 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310826> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:11 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310813> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:11 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310812> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:11 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310824> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:11 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310814> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:11 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310815> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:11 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310816> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:11 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310827> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:11 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310819> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:11 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310817> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:11 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310818> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:11 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310820> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:11 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310822> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:11 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310823> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:11 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310821> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:11 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310825> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:11 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310826> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:11 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310813> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:11 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310813> (referer: None)
+2023-06-30 22:11:11 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310812> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:11 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310812> (referer: None)
+2023-06-30 22:11:11 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310824> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:11 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310815> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:11 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310815> (referer: None)
+2023-06-30 22:11:11 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310814> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:11 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310814> (referer: None)
+2023-06-30 22:11:11 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310816> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:11 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310816> (referer: None)
+2023-06-30 22:11:11 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310813>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:11 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310812>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:11 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310815>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:11 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310814>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:11 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310816>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:11 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310819> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:11 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310819> (referer: None)
+2023-06-30 22:11:11 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310827> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:11 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310818> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:11 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310818> (referer: None)
+2023-06-30 22:11:11 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310822> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:11 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310822> (referer: None)
+2023-06-30 22:11:11 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310817> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:11 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310817> (referer: None)
+2023-06-30 22:11:11 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310820> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:11 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310820> (referer: None)
+2023-06-30 22:11:11 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310819>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:11 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310818>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:12 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310822>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:12 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310817>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:12 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310820>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:12 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310821> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:12 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310821> (referer: None)
+2023-06-30 22:11:12 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310823> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:12 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310823> (referer: None)
+2023-06-30 22:11:12 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310825> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:12 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310825> (referer: None)
+2023-06-30 22:11:12 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310826> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:12 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310826> (referer: None)
+2023-06-30 22:11:12 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310828> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:12 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310821>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:12 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310823>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:12 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310825>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:12 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310824> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:12 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310824> (referer: None)
+2023-06-30 22:11:12 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310826>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:12 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310824>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:12 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310830> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:12 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310829> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:12 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310832> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:12 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310831> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:12 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310833> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:12 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310827> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:12 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310827> (referer: None)
+2023-06-30 22:11:12 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310835> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:12 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310834> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:12 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310827>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:12 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310836> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:12 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310837> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:12 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310838> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:12 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310839> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:12 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310841> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:12 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310840> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:12 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310828> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:12 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310842> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:12 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310829> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:12 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310830> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:12 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310834> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:12 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310832> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:12 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310833> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:13 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310835> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:13 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310831> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:13 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310843> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:13 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310836> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:13 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310837> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:13 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310839> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:13 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310838> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:13 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310841> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:13 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310828> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:13 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310828> (referer: None)
+2023-06-30 22:11:13 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310840> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:13 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310842> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:13 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310828>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:13 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310829> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:13 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310829> (referer: None)
+2023-06-30 22:11:13 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310831> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:13 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310831> (referer: None)
+2023-06-30 22:11:13 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310835> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:13 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310835> (referer: None)
+2023-06-30 22:11:13 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310829>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:13 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310833> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:13 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310833> (referer: None)
+2023-06-30 22:11:13 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310831>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:13 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310832> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:13 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310832> (referer: None)
+2023-06-30 22:11:13 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310830> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:13 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310830> (referer: None)
+2023-06-30 22:11:13 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310834> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:13 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310834> (referer: None)
+2023-06-30 22:11:13 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310843> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:13 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310836> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:13 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310836> (referer: None)
+2023-06-30 22:11:13 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310835>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:13 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310833>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:13 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310832>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:13 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310830>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:13 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310834>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:13 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310836>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:13 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310837> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:13 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310837> (referer: None)
+2023-06-30 22:11:13 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310841> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:13 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310841> (referer: None)
+2023-06-30 22:11:13 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310839> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:13 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310839> (referer: None)
+2023-06-30 22:11:13 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310842> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:13 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310842> (referer: None)
+2023-06-30 22:11:13 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310838> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:13 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310838> (referer: None)
+2023-06-30 22:11:13 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310837>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:13 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310841>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:13 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310844> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:13 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310840> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:13 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310840> (referer: None)
+2023-06-30 22:11:13 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310845> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:13 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310839>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:13 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310842>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:13 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310838>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:13 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310846> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:13 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310840>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:13 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310847> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:13 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310848> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:13 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310849> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:14 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310850> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:14 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310851> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:14 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310843> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:14 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310843> (referer: None)
+2023-06-30 22:11:14 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/2553079> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:14 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310853> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:14 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310854> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:14 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310855> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:14 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310843>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:14 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310856> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:14 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310845> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:14 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310857> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:14 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310858> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:14 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310846> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:14 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310844> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:14 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310847> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:14 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310848> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:14 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310849> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:14 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310853> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:14 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/2553079> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:14 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310850> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:14 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310851> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:14 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310854> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:14 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310859> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:14 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310855> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:14 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310845> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:14 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310845> (referer: None)
+2023-06-30 22:11:14 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310856> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:14 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310857> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:14 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310845>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:14 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310858> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:15 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310846> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:15 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310846> (referer: None)
+2023-06-30 22:11:15 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310844> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:15 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310844> (referer: None)
+2023-06-30 22:11:15 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310847> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:15 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310847> (referer: None)
+2023-06-30 22:11:15 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310849> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:15 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310849> (referer: None)
+2023-06-30 22:11:15 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310846>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:15 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310848> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:15 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310848> (referer: None)
+2023-06-30 22:11:15 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/2553079> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:15 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/2553079> (referer: None)
+2023-06-30 22:11:15 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310853> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:15 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310853> (referer: None)
+2023-06-30 22:11:15 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310844>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:15 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310847>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:15 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310849>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:15 [scrapy.crawler] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2023-06-30 22:11:15 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2023-06-30 22:11:15 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310850> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:15 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310850> (referer: None)
+2023-06-30 22:11:15 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310848>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:15 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/2553079>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:15 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310853>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:15 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310854> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:15 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310854> (referer: None)
+2023-06-30 22:11:15 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310851> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:15 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310851> (referer: None)
+2023-06-30 22:11:15 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310859> (failed 2 times): 503 Service Unavailable
+2023-06-30 22:11:15 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310857> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:15 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310857> (referer: None)
+2023-06-30 22:11:15 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310850>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:15 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310855> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:15 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310855> (referer: None)
+2023-06-30 22:11:15 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310854>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:15 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310856> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:15 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310856> (referer: None)
+2023-06-30 22:11:15 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310860> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:15 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310851>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:15 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310857>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:15 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310855>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:15 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310856>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:15 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310858> (failed 3 times): 503 Service Unavailable
+2023-06-30 22:11:15 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310858> (referer: None)
+2023-06-30 22:11:15 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310861> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:15 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310862> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:15 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310864> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:15 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310863> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:15 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310866> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:15 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310867> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:15 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310858>: HTTP status code is not handled or not allowed
+2023-06-30 22:11:15 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dl.ndl.go.jp/api/item/related/info:ndljp/pid/1310865> (failed 1 times): 503 Service Unavailable
+2023-06-30 22:11:15 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 141385,
+ 'downloader/request_count': 392,
+ 'downloader/request_method_count/GET': 392,
+ 'downloader/response_bytes': 860395,
+ 'downloader/response_count': 392,
+ 'downloader/response_status_count/200': 1,
+ 'downloader/response_status_count/503': 391,
+ 'elapsed_time_seconds': 23.227616,
+ 'finish_reason': 'shutdown',
+ 'finish_time': datetime.datetime(2023, 6, 30, 14, 11, 15, 733259),
+ 'httperror/response_ignored_count': 127,
+ 'httperror/response_ignored_status_count/503': 127,
+ 'log_count/DEBUG': 395,
+ 'log_count/ERROR': 127,
+ 'log_count/INFO': 139,
+ 'memusage/max': 73515008,
+ 'memusage/startup': 73515008,
+ 'response_received_count': 128,
+ 'retry/count': 264,
+ 'retry/max_reached': 127,
+ 'retry/reason_count/503 Service Unavailable': 264,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 391,
+ 'scheduler/dequeued/memory': 391,
+ 'scheduler/enqueued': 400,
+ 'scheduler/enqueued/memory': 400,
+ 'start_time': datetime.datetime(2023, 6, 30, 14, 10, 52, 505643)}
+2023-06-30 22:11:15 [scrapy.core.engine] INFO: Spider closed (shutdown)
