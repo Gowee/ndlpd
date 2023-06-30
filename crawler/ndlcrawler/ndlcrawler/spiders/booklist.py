@@ -8,8 +8,17 @@ class BooklistSpider(scrapy.Spider):
     allowed_domains = ["dl.ndl.go.jp"]
     # start_urls = ["https://dl.ndl.go.jp"]
 
+    def __init__(
+        self,
+        classic_facet=None,
+        *args,
+        **kwargs,
+    ):
+        super().__init__(*args, **kwargs)
+        self.classic_facet = classic_facet
+
     def start_requests(self):
-        yield scrapy.http.JsonRequest(URL_LIST, data=genparams(1), meta={'next_page': 2})
+        yield scrapy.http.JsonRequest(URL_LIST, data=genparams(1, self.classic_facet), meta={'next_page': 2})
 
     def parse(self, response):
         page = response.meta['next_page']
@@ -22,10 +31,13 @@ class BooklistSpider(scrapy.Spider):
             logger.info(f"No more books on {page}")
         for item in d['searchHits']:
             self.logger.info(f"VALID_ID: " + item['id'])
-        yield scrapy.http.JsonRequest(URL_LIST, data=genparams(page), meta={'next_page': page + 1})
+        yield scrapy.http.JsonRequest(URL_LIST, data=genparams(page, self.classic_facet), meta={'next_page': page + 1})
 
-def genparams(page):
+def genparams(page, classic_facet=None):
     null = None
     true = True
     false = False
-    return {"collection":["A00003"],"accessRestrictions":["internet"],"keyword":"","title":"","creator":"","publisher":"","eraType":null,"collectionEraType":null,"publicationPlace":"","tableOfContents":"","ndc":[],"ndlc":"","identifierItem":"PID","identifier":"","callNumber":"","subject":"","subCollection":[],"kotenSubject":"","classicMaterialTypeList":[],"classicManuscriptionList":[],"provenance":"","series":"","musicType":"","subjectKanpo":"","volumeSubtitle":"","partTitleKanpo":"","partTitleKanpoNumber":"","federalRegisterTypeList":[],"volumeFederalRegisterItemType":"","volumeFederalRegister":"","publicationName":"","publicationVolume":"","description":"","provider":"","bibliographicLevel":[],"pageNum":page,"pageSize":"100","sortKey":"SCORE","order":"DESC","fullText":true,"pid":"","bibId":"","releaseNumber":"","permission_facet":["internet"],"excludeVolumeNum":false}
+    params = {"collection":["A00003"],"accessRestrictions":["internet"],"keyword":"","title":"","creator":"","publisher":"","eraType":null,"collectionEraType":null,"publicationPlace":"","tableOfContents":"","ndc":[],"ndlc":"","identifierItem":"PID","identifier":"","callNumber":"","subject":"","subCollection":[],"kotenSubject":"","classicMaterialTypeList":[],"classicManuscriptionList":[],"provenance":"","series":"","musicType":"","subjectKanpo":"","volumeSubtitle":"","partTitleKanpo":"","partTitleKanpoNumber":"","federalRegisterTypeList":[],"volumeFederalRegisterItemType":"","volumeFederalRegister":"","publicationName":"","publicationVolume":"","description":"","provider":"","bibliographicLevel":[],"pageNum":page,"pageSize":"100","sortKey":"SCORE","order":"DESC","fullText":true,"pid":"","bibId":"","releaseNumber":"","permission_facet":["internet"],"excludeVolumeNum":false}
+    if classic_facet:
+        params['classic_facet'] = [classic_facet]
+    return params
