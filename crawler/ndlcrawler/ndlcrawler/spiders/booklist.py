@@ -17,6 +17,9 @@ class BooklistSpider(scrapy.Spider):
         d = json.loads(response.text)
         if d.get('success') == False:
             logger.info(f"Ended at {page}")
+            return
+        if not d.get('searchHits'):
+            logger.info(f"No more books on {page}")
         for item in d['searchHits']:
             self.logger.info(f"VALID_ID: " + item['id'])
         yield scrapy.http.JsonRequest(URL_LIST, data=genparams(page), meta={'next_page': page + 1})
